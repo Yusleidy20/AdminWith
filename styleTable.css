@@ -1,0 +1,249 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+:root {
+    --main-color:#70DFFA;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+    --text-azul: #071830;
+
+    --clr-primary: #7380ec;
+    --clr-danger: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #fff;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warnig: #ff4edc;
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f6f6f9;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+  
+  }
+  
+  /* dark theme */
+  .dark-theme-variables {
+    --clr-color-background: #181a1e;
+    --clr-white: #202528;
+    --clr-light: rgba(0, 0, 0, 0.4);
+    --clr-dark: #edeffd;
+    --clr-dark-variant: #677483;
+    --box-shadow: 0 2rem 3rem var(--clr-light)
+  }
+
+
+.section-head h1{
+    padding: 30px;
+}
+
+main .recent_order{
+    margin-top: 2rem;
+}
+
+main .recent_order h2{
+    color: var(--clr-dark);
+}
+
+.sectionTable{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.sectionTable .recent_order table{
+    background-color: var(--clr-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: 8px 8px 5px 0px #8390A2;
+    transition: all .3 ease;
+    color: var(--clr-dark);
+}
+
+
+.containerTable .table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+tbody{
+    tr{
+        td{
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #dfdfdf;
+
+        }
+
+    }
+}
+
+.containerTable .table_header .btnAddTable{
+    border: var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 9px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.search-wrapper{
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.search-wrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.search-wrapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+
+
+
+.containerTable .table_header .input_search{
+    border:  1px solid #8390A2;
+    background-color: #f1f5f9;
+    padding: 2px;
+    border-radius: 30px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.containerTable .table_header .btnAddTable{
+    border: var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+main table tbody tr{
+    height: 3.8rem;
+    border-bottom: 1px solid var(--clr-white);
+    color: var(--clr-dark-variant);
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.tr-thead-color{
+    background-color: #f1f5f9;
+    th{
+        padding: 10px;
+    }
+}
+
+.main table tbody td{
+    height: 3.8rem;
+    border-bottom: 1px solid var(--clr-white);
+}
+
+main table tbody tr:last-child{
+    border:none;
+}
+
+.main .recent_order a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .sectionTable {
+        width: 100%;
+        padding: 0;
+        width: 90%; /* Reducir el ancho de la tabla */
+    }
+
+    .table_header {
+        padding: 10px;
+    }
+
+    .search-wrapper {
+        width: 180px;
+        height: 40px;
+    }
+
+    .search-wrapper input {
+        padding: .3rem;
+    }
+
+    tbody tr td,
+    thead tr th {
+        font-size: 14px;
+    }
+
+    
+
+    
+    
+    
+    .containerTable .table_header .input_search{
+        border:  1px solid #090c0f;
+        background-color: #f1f5f9;
+        padding: 1px;
+        border-radius: 30px;
+        height: 6px;
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    
+    .btnAddTable{
+        background-image: url("../img/add.png");
+        background-color: transparent;
+        border: transparent;
+        border-radius: 0;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-indent: -99999px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    
+}
