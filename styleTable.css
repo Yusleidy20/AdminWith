@@ -231,7 +231,7 @@ main table tbody tr:last-child{
     }
     
     .btnAddTable{
-        background-image: url("../img/add.png");
+        background-image: url("img/add.png");
         background-color: transparent;
         border: transparent;
         border-radius: 0;
